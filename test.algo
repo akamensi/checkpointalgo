@@ -1,0 +1,31 @@
+ALGORITHM checkpoint
+VAR
+    ls,nw,nv:=INTEGER
+    l:=CHAR
+BEGIN
+    ls=0;
+    nw=1;
+    nv=0;
+    REPEAT
+
+        Write("donnez un charatere");
+        Read(l);
+
+        ls:=ls+1;
+        
+        IF (l = 'a' OR l='A' OR l='e' OR l='E' OR l='y' OR l='Y' OR l='u' OR l='U' l='i' OR l='I' OR l='o' OR l='O' ) THEN
+            nv:=nv+1;
+        END_IF
+        
+
+        IF (l = ' ') THEN
+            nw:=nw+1;
+        END_IF
+          
+        UNTIL (l='.')
+
+
+        Write("Nbr de char",ls);
+        Write("Nbr de V",nv);
+        Write("Nbr de mot",nw)
+END
