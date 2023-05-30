@@ -1,0 +1,23 @@
+ALGORITHM Sorarr
+VAR
+    arr : ARRAY_OF INTEGER[n];
+    currentElement:INTEGER
+    FUNCTION InserSort(arr) : INTEGER
+    VAR
+        i,j=INTEGER
+        arr=INTEGER
+    BEGIN
+        FOR i FROM 1 TO n-1 STEP 1  DO
+            currentElement = arr[i]
+            j = i -1
+            WHILE (j >= 0 and arr[j] > currentElement:) DO
+                arr[j+1]= arr[j]
+                j = j -1
+                arr[j+1] = currentElement
+            END_WHILE
+        END_FOR
+        RETURN arr ;
+    END
+BEGIN
+    set_instructions
+END
